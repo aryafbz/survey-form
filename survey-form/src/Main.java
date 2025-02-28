@@ -18,10 +18,12 @@ public class Main {
 
         // Create title label
         JLabel title = new JLabel("survey form");
+        title.setFont(new Font("Arial", Font.BOLD, 20));
         title.setBounds(10, 10, 100, 20);
 
         // Create start button
         JButton startButton = new JButton("begin!");
+        startButton.setFont(new Font("Arial", Font.BOLD, 15));
         startButton.setBounds(10, 40, 100, 20);
 
         // Add components to the panel
