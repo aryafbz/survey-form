@@ -1,6 +1,7 @@
 package packages;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class thankYouPage {
 
@@ -13,6 +14,7 @@ public class thankYouPage {
 
         // Create thank you label
         JLabel thankYouLabel = new JLabel("با تشکر از مشارکت شما!");
+        thankYouLabel.setFont(new Font("Arial", Font.BOLD, 20));
         thankYouLabel.setBounds(10, 10, 200, 20);
 
         // Add components to the panel
