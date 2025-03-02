@@ -1,6 +1,7 @@
 package packages;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class informationPage {
 
@@ -9,27 +10,32 @@ public class informationPage {
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
         panel.setLayout(null);
+        panel.setLayout(new BoxLayout(panel , BoxLayout.PAGE_AXIS));
+        panel.setBackground(Color.YELLOW);
+        panel.add(Box.createRigidArea(new Dimension(20, 20)));
+
 
         // Name Label and Text Field
         JLabel nameLabel = new JLabel("name");
         nameLabel.setFont(new Font("Arial", Font.BOLD, 20));
         nameLabel.setBounds(10, 10, 100, 20);
         JTextField nameField = new JTextField(15);
-        nameField.setBounds(50, 10, 100, 20);
+        nameField.setBounds(50, 10, 100, 10);
+
 
         // Age Label and Text Field
         JLabel ageLabel = new JLabel("age");
         ageLabel.setFont(new Font("Arial", Font.BOLD, 20));
         ageLabel.setBounds(10, 50, 100, 20);
         JTextField ageField = new JTextField(15);
-        ageField.setBounds(50, 50, 100, 20);
+        ageField.setBounds(50, 50, 100, 10);
 
         // Email Label and Text Field
         JLabel emailLabel = new JLabel("email");
         emailLabel.setFont(new Font("Arial", Font.BOLD, 20));
         emailLabel.setBounds(10, 90, 100, 20);
         JTextField emailField = new JTextField(15);
-        emailField.setBounds(50, 90, 100, 20);
+        emailField.setBounds(50, 90, 100, 10);
 
         // Software Familiarity Level
         JLabel levelLabel = new JLabel("Level of knowledge of similar software");
